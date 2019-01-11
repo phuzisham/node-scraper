@@ -14,6 +14,6 @@ rp(url).then(function(html) {
     })
   )
   console.log(wikiUrls);
-}).catch(function() {
-  console.log('error');
+}).catch(function(err) {
+  console.log(err);
 });

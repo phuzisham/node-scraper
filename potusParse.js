@@ -5,8 +5,8 @@ const potusParse = function(url) {
   return rp(url).then(function(html) {
     console.log($('.firstHeading', html).text());
     console.log($('.bday', html).text());
-  }).catch(function() {
-    console.log('error');
+  }).catch(function(err) {
+    console.log(err);
   });
 };
 
